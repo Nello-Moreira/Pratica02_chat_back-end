@@ -2,24 +2,6 @@ import fs from 'fs';
 
 import { cleanString, getTime } from '../helpers.js';
 
-const data = {
-	participants: [
-		{
-			name: 'a',
-			lastStatus: Date.now(),
-		},
-	],
-	messages: [
-		{
-			from: 'João',
-			to: 'Todos',
-			text: 'oi galera',
-			type: 'message',
-			time: '20:04:37',
-		},
-	],
-};
-
 const databasePath = './src/data/database.json';
 
 function getStoredData() {
